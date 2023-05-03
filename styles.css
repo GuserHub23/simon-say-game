@@ -1,0 +1,133 @@
+* {
+  font-family: 'Press Start 2P', cursive;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  text-align: center;
+  background-color: #2b3e9b;
+}
+
+header {
+  margin:0 3rem;
+}
+
+#level-title {
+  font-size: 2rem;
+  margin: 2rem auto;
+  color: #ffffff;
+}
+
+.exp {
+  font-size: 1rem;
+  margin: 3rem 1rem;
+  color: #ffffff;
+}
+
+.highestLevel, .highestExp {
+  font-size: 1rem;
+  margin: 1rem auto;
+  color: #ffffff;
+}
+
+#start-btn {
+  border: none;
+  background-color: #fde74c;
+  color: #292929;
+  font-size: 1rem;
+  text-transform: uppercase;
+  padding: 20px 30px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  outline: none;
+  margin-bottom: 2rem;
+}
+
+#start-btn:hover {
+  background-color: #ffb900;
+  color: #ffffff;
+}
+
+.container {
+  position: relative;
+  width: 320px;
+  height: 320px;
+  margin: 0 auto;
+}
+
+.container::after {
+  content: "";
+  height: 10rem;
+  width: 10rem;
+  background-color: #292929;
+  border: .2rem solid #2b3e9b;
+  border-radius: 100%;
+  position: absolute;
+  top: 75px;
+  right: 75px;
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+}
+
+.reset-btn {
+  position: absolute;
+  border-radius: 100%;
+  width: 10rem;
+  height: 10rem;
+  top: 78px;
+  left: 82px;
+  z-index: 10;
+  background-color: #fde74c;
+  font-size: 1rem;
+  border: none;
+  cursor: pointer;
+}
+
+.game-over {
+  background-color: red;
+  opacity: 0.8;
+}
+
+.btn {
+  display: inline-block;
+  height: 10rem;
+  width: 10rem;
+  border: none;
+  clip-path: circle(100% at 0 0);
+}
+.red {  
+  background-color: red;
+  transform: rotate(-90deg);
+}
+
+.green {
+  background-color: green;
+  transform: rotate(180deg);
+}
+
+.blue {
+  background-color: blue;
+  transform: rotate(0deg);
+
+}
+
+.yellow {
+  background-color: yellow;
+  transform: rotate(90deg);
+}
+
+.pressed {
+  box-shadow: 0 0 20px white;
+  background-color: grey;
+}
+
+@media screen and (min-width: 768px) {
+  .reset-btn {
+    top: 77px;
+    left: 83px;
+  }
+}

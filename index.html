@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Simon Say - Game</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
+
+<body>
+  <header>
+    <h1 id="level-title">Press 'start' button to play</h1>
+    <p class="highestLevel">Level record: 0</p>
+    <p class="highestExp">EXP record: 0</p>
+    <p class="exp">exp: 0</p>
+    <button id="start-btn">Start</button>
+  </header>
+
+  <main class="container">
+    <button class="reset-btn">restart</button>
+
+    
+    <div class="row">
+      
+      <button type="button" id="green" class="btn green">
+        
+      </button>
+      
+      <button type="button" id="red" class="btn red">
+        
+      </button>
+    </div>
+    
+    <div class="row">
+      
+      <button type="button" id="yellow" class="btn yellow">
+        
+      </button>
+      <button type="button" id="blue" class="btn blue">
+        
+      </button>
+      
+    </div>
+
+    <!-- <div class="circle"></div> -->
+
+  </main>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="game.js" type="text/javascript"></script>
+</body>
+
+</html>
